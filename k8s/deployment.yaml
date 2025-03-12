@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: python-appgke-wrong
-        image: gcr.io/clustergke-453308/python-appgke-wrong:latest
+        image: gcr.io/clustergke-453308/python-appgke-wrong:icai20205
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
