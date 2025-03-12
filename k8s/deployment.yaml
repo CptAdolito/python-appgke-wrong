@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-appgke
+  name: python-appgke-wrong
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: python-appgke
+      app: python-appgke-wrong
   template:
     metadata:
       labels:
-        app: python-appgke
+        app: python-appgke-wrong
     spec:
       containers:
-      - name: python-appgke
-        image: gcr.io/clustergke-453308/python-appgke:latest
+      - name: python-appgke-wrong
+        image: gcr.io/clustergke-453308/python-appgke-wrong:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
